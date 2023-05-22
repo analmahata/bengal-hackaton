@@ -5,12 +5,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
 * {
-  padding: 0;
   margin: 0;
-  border-radius: 0;
+  padding: 0;
   box-sizing: border-box;
-  text-decoration: none;
   text-transform: none;
+  text-decoration: none;
+}
+
+.registerBtn {
+  font-weight: bold;
+  letter-spacing: 0.15rem;
+  text-transform: uppercase;
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.6rem 1.5rem;
+  font-size: 1.3rem;
+  cursor: pointer;
+  color: var(--clr-white);
+  background: var(--clr-primary);
+  border-radius: 0.35rem;
+  transition: var(--btn-transiction);
+  text-decoration: none;
+  border: none;
+  transition: all 0.5s;
+  font-family: "Montserrat", Montserrat, monospace;
+}
+.btn:hover {
+  border-radius: 2rem;
+  background: var(--clr-secondary);
+  border-radius: 6rem;
 }
 
 :root {
@@ -537,33 +563,6 @@ section {
     padding: 2rem;
   }
 }
-.registerBtn {
-  font-weight: bold;
-  letter-spacing: 0.15rem;
-  text-transform: uppercase;
-}
-
-.btn {
-  display: inline-block;
-  margin-top: 1rem;
-  padding: 0.6rem 1.5rem;
-  font-size: 1.3rem;
-  cursor: pointer;
-  color: var(--clr-white);
-  background: var(--clr-primary);
-  border-radius: 0.35rem;
-  transition: var(--btn-transiction);
-  text-decoration: none;
-  border: none;
-  transition: all 0.5s;
-  font-family: "Montserrat", Montserrat, monospace;
-}
-.btn:hover {
-  border-radius: 2rem;
-  background: var(--clr-secondary);
-  border-radius: 6rem;
-}
-
 /*---------- Tablet version ----------*/
 @media (max-width: 768px) {
   #menu-btn {

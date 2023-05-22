@@ -1,49 +1,7 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Satisfy&display=swap");
-* {
-    padding: 0;
-    margin: 0;
-    border-radius: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    text-transform: none;
-}
-
-:root {
-    --clr-primary: #27ae60;
-    --clr-secondary: #ff8c00;
-    --clr-danger: #d80000;
-    --clr-sucess: #27ae60;
-    --clr-white: #ffffff;
-    --clr-black: #000000;
-    --clr-bg: #f7f7f7;
-    --clr-blue: #0099ff;
-    --clr-red: #ff0000;
-    --clr-purple: #620089;
-    --clr-yellow: #ffff00;
-    --clr-orange: #ff9900;
-    --clr-green: #27ae60;
-    --clr-pink: #f73cb9;
-    --clr-gray-100: #ffffff;
-    --clr-gray-80: #cccccc;
-    --clr-gray-60: #999999;
-    --clr-gray-40: #666666;
-    --clr-gray-20: #333333;
-    --gradient-pp: linear-gradient(90deg, #755bea, #f754ae);
-    --border-dark: .1rem solid rgba(0,0,0,.2);
-    --border-light: solid 1px rgb(195, 195, 195);
-    --image-shadow: 0 1px 7px rgb(0, 0, 0, 0.5);
-    --box-shadow: 0 1px 7px rgba(0, 0, 0, 0.279);
-    --btn-transiction: .6s;
-    --box-transiction: all .3s;
-
-
-    --clr-text: #000000;
-}
+@use './imports/base/base' as *;
+@use './imports/fonts/fonts' as *;
+@use './imports/custom/buttons' as *;
+@use './imports/colors/colors' as *;
 h1,
 h2,
 h3,
@@ -512,33 +470,7 @@ section {
 
 
 
-.registerBtn {
-    font-weight: bold;
-    letter-spacing: .15rem;
-    text-transform: uppercase;
-}
 
-.btn {
-    display: inline-block;
-    margin-top: 1rem;
-    padding:.6rem 1.5rem;
-    font-size: 1.3rem;
-    cursor: pointer;
-    color: var(--clr-white);
-    background: var(--clr-primary);
-    border-radius: .35rem;
-    transition: var(--btn-transiction);
-    text-decoration: none;
-    border: none;
-    transition: all .5s;
-    font-family: 'Montserrat', Montserrat, monospace;
-
-    &:hover{
-        border-radius: 2rem;
-        background: var(--clr-secondary);
-        border-radius: 6rem;
-    }
-}
 
 
 
